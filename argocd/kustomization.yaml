@@ -12,12 +12,12 @@ resources:
 
   - operators/all-operators.yaml
   
-  - operands/all-operands.yaml
+  #- operands/all-operands.yaml
  
   #- apis-and-products.yaml
 
 patches:
-- target:cat
+- target:
     group: argoproj.io
     kind: Application
     labelSelector: group=applications
