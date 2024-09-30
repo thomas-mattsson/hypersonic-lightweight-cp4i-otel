@@ -17,7 +17,7 @@ resources:
   #- apis-and-products.yaml
 
 patches:
-- target:cat
+- target:
     group: argoproj.io
     kind: Application
     labelSelector: group=applications
