@@ -3,12 +3,12 @@ kind: Kustomization
 
 resources:
 
-  #- operators/operator-project.yaml
-  #- operands/operand-project.yaml
-  #- cp4i-argo-role.yaml
-  #- cp4i-argo-rb.yaml
+  - operators/operator-project.yaml
+  - operands/operand-project.yaml
+  - cp4i-argo-role.yaml
+  - cp4i-argo-rb.yaml
 
-  #- common.yaml
+  - common.yaml
 
   #- operators/all-operators.yaml
   
