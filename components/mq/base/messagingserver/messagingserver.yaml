@@ -6,6 +6,6 @@ spec:
   queueManager:
     name: MSGSERVERQM
     storage:
-      defaultClass: managed-csi
+      defaultClass: ocs-storagecluster-ceph-rbd
     availability:
       type: NativeHA
