@@ -14,4 +14,4 @@ resources:
   # Resources for QM using certificate from LetsEncrypt
   #- native-ha-qm-wellknowncerts
 
-  #- native-ha-qm-auth
+  - native-ha-qm-auth
