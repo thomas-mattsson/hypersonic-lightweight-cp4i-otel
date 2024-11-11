@@ -23,7 +23,7 @@ spec:
     - server auth
     - client auth
   dnsNames:
-    - 'wellknown-cert-qm-ibm-mq-qm-cp4i.apps.jn8qaoym.eastus.aroapp.io'
+    - 'wellknown-cert-qm-ibm-mq-qm-cp4i.apps.t9xdnubu.eastus.aroapp.io'
     - 'aro.ceibm.com'
   issuerRef:
     name: letsencrypt-cluster-issuer
