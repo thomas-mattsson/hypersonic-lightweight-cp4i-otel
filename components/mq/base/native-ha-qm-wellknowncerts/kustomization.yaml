@@ -17,6 +17,6 @@ resources:
   # Resources for QM using certificate from LetsEncrypt
 
   - qm.yaml
-  - sni-route.yaml
+  #- sni-route.yaml
 
   - tls/mq-server-certificate.yaml
