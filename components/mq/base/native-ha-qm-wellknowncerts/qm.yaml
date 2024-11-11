@@ -69,7 +69,7 @@ spec:
     trust:
       - name: letsencrypt
         secret:
-          secretName: letsencrypt-chain
+          secretName: letsencrypt-new-chain
           items:
             - ca.crt
   web:
