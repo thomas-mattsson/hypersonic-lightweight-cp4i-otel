@@ -6,13 +6,19 @@ metadata:
   name: quickstart
   namespace: cp4i
 spec:
-  version: 10.5-cd
   license:
     accept: true
-    use: developers-limited
-    license: L-PYDN-Q4NGNT
-  replicas: 3
+    license: L-EYGU-PVGRBC
+    use: nonproduction
+  replicas: 1
+  resources:
+    limits:
+      memory: 4Gi
+    requests:
+      cpu: 1
+      memory: 4Gi
   users:
-  - name: admin
-    passwordSecret: datapower-admin
-    accessLevel: privileged
+    - accessLevel: privileged
+      name: admin
+      passwordSecret: datapower-admin
+  version: 10.6-lts
