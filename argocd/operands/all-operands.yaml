@@ -9,7 +9,7 @@ spec:
         - name: platformnavigator
           namespace: cp4i
           sync-wave: "200"
-        - name: ibm-datapower
+        - name: idatapower
           namespace: cp4i
           sync-wave: "300"
         #- name: apiconnect
