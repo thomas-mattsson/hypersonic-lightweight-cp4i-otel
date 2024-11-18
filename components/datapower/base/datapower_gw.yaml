@@ -1,7 +1,10 @@
-apiVersion: datapower.ibm.com/v1beta3
 kind: DataPowerService
+apiVersion: datapower.ibm.com/v1beta3
 metadata:
-  name: datapower
+  labels:
+    backup.datapower.ibm.com/component: datapowerservice
+  name: quickstart_2
+  namespace: cp4i
 spec:
   version: 10.5-cd
   license:
