@@ -3,8 +3,7 @@ kind: Kustomization
 
 components:
 
-- ../../../../components/datapower/variants/cloudprovider/azure
-- ../../../../components/datapower/variants/nonprod
+
 
 resources:
 - ../../../../components/datapower/base
