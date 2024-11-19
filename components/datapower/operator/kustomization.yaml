@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - datapowermonitors.yaml
   - datapowermustgathermanagers.yaml
+  - datapowermustgathers.yaml
