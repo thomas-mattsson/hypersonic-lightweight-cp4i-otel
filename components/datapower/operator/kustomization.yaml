@@ -5,3 +5,4 @@ resources:
   - datapowermonitors.yaml
   - datapowermustgathermanagers.yaml
   - datapowermustgathers.yaml
+  - datapowerrollouts.yaml
