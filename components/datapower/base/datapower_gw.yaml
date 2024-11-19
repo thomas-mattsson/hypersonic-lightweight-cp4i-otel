@@ -11,10 +11,11 @@ spec:
   replicas: 1
   resources:
     limits:
-      memory: 4Gi
+      cpu: 2
+      memory: 2Gi
     requests:
-      cpu: 1
-      memory: 4Gi
+      cpu: 500m
+      memory: 512Mi
   users:
     - accessLevel: privileged
       name: admin
