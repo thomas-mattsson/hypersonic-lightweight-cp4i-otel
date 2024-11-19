@@ -7,3 +7,4 @@ resources:
   - datapowermustgathers.yaml
   - datapowerrollouts.yaml
   - datapowerservicebindings.yaml
+  - datapowerservices.yaml
