@@ -5,11 +5,11 @@ resources:
   - metrics
  
   # Resources for QM using a self signed server certificate.
-  - native-ha-qm
+  #- native-ha-qm
 
   #- singleinstance-qm
 
-  - messagingserver
+  #- messagingserver
 
   # Resources for QM using certificate from LetsEncrypt
   # - native-ha-qm-wellknowncerts
