@@ -19,6 +19,8 @@ Steps to configure this should be
     ```
 
 1. Create openshift secret with this certificate
-1. Add the certificate to the QMs truststore and validate that the chain is ok. 
+1. Add the certificate to the QMs truststore (qm.yaml) and validate that the chain is ok. 
 1. Setup qm.ini file to create outgoing connections by defining HTTPSKeyStore: https://www.ibm.com/docs/en/SSFKSJ_9.4.0/secure/create_key_repos_as_TLS_trust.html - or refer to these in the truststore already created by the operator?
 1. Setup qm.ini file to use JKWS endpoint by defining JWKS stanza: https://www.ibm.com/docs/en/ibm-mq/9.4?topic=qmini-jwks-stanza-file
+1. Compile and place jmsjwt exit jar files in container.
+1. Compile client program and test.
