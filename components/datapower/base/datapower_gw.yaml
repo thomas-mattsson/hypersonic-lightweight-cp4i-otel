@@ -8,6 +8,9 @@ spec:
     accept: true
     license: L-EYGU-PVGRBC
     use: nonproduction
+  gateway:
+    webGUIManagementEnabled: true
+    webGUIManagementPort: 9090
   replicas: 1
   resources:
     limits:
