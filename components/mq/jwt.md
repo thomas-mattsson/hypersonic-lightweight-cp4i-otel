@@ -7,7 +7,11 @@ See:
 
 Steps to configure this should be 
 
-1. Validate that we can get a token from the keycloak token endpoint by POSTing a request to <keycloak URL>/realms/master/protocol/openid-connect/token with parameters "client_id=%s&username=%s&password=%s&grant_type=password" 
+1. Validate that we can get a token from the keycloak token endpoint for a user in keycloak:
+    ```
+    curl -s -X POST 'https://keycloak-cp4i.apps.t9xdnubu.eastus.aroapp.io/realms/cloudpak/protocol/openid-connect/token' -H "Content-Type: application/x-www-form-urlencoded" -d "username=integration-admin" -d 
+    'password=<password>' -d 'grant_type=password' -d 'client_id=admin-cli' | jq -r '.access_token'
+    ```
 1. Identify keycloak JWKS endpoint - should be https://keycloak-cp4i.apps.t9xdnubu.eastus.aroapp.io/realms/master/protocol/openid-connect/certs
 1. Certificate can be fetched with:
     ```
