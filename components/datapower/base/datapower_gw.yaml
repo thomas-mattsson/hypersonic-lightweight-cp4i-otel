@@ -19,6 +19,6 @@ spec:
   users:
     - name: admin
       accessLevel: privileged
-      passwordSecret: datapower-admin
+      passwordSecret: dpadmin-credentials
 
   version: 10.6-lts
