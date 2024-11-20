@@ -20,8 +20,5 @@ spec:
     - name: admin
       accessLevel: privileged
       passwordSecret: datapower-admin
-    - name: espen
-      accessLevel: privileged
-      passwordSecret: datapower-admin
 
   version: 10.6-lts
