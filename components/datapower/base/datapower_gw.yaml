@@ -8,7 +8,11 @@ spec:
     accept: true
     license: L-EYGU-PVGRBC
     use: nonproduction
-  replicas: 2
+  env:
+  - name: DATAPOWER_INTERACTIVE
+    value: "true"
+
+  replicas: 1
   resources:
     limits:
       cpu: '2'
