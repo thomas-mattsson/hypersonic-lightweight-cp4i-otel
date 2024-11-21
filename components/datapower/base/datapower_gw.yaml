@@ -12,7 +12,7 @@ spec:
   - name: DATAPOWER_INTERACTIVE
     value: "true"
   domains:
-  - name: default
+  - name: "default"
     dpApp:
       config:
         — web-config
