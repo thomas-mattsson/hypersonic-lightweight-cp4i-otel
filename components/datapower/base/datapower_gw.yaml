@@ -16,7 +16,7 @@ spec:
   - name: "default"
     dpApp:
       config:
-      - "web-config"
+      - web-gui
 
   replicas: 1
   resources:
