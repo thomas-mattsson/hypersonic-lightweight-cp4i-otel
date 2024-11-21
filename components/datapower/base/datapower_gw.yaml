@@ -13,6 +13,8 @@ spec:
     value: "true"
   extraExe:
   - quickstart-enable-web-ui
+  initCmds:
+  - cp /usr/local/init/extra/quickstart-enable-web-ui/default.cfg /opt/ibm/datapower/init/default-config/default.cfg
   
   replicas: 1
   resources:
