@@ -5,4 +5,4 @@ resources:
   - datapower_gw.yaml
   - dp-webui-service.yaml
   - route.yaml
-  - quickstart_e_webui.yaml
+  - webgui.yaml
