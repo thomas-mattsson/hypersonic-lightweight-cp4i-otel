@@ -8,7 +8,7 @@ spec:
     accept: true
     license: L-EYGU-PVGRBC
     use: nonproduction
-  replicas: 1
+  replicas: 2
   resources:
     limits:
       cpu: '2'
