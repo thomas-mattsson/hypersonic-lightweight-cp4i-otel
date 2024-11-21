@@ -4,8 +4,6 @@ metadata:
   name: quickstart
   namespace: cp4i
 spec:
-  runAsRoot: true
-  
   license:
     accept: true
     license: L-EYGU-PVGRBC
@@ -13,11 +11,11 @@ spec:
   env:
   - name: DATAPOWER_INTERACTIVE
     value: "true"
-  extraExe:
-  - quickstart-enable-web-ui
-  initCmds:
-  - cp /usr/local/init/extra/quickstart-enable-web-ui/default.cfg /opt/ibm/datapower/init/default-config/default.cfg
-  
+  domains:
+  — dpApp:
+      config:
+        — web-config
+      name: default
   replicas: 1
   resources:
     limits:
