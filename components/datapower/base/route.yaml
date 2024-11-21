@@ -15,7 +15,7 @@ spec:
     termination: passthrough
     insecureEdgeTerminationPolicy: None
   wildcardPolicy: None
-  alternateBackends: []
+  #alternateBackends: []
 status:
   ingress:
     - host: datapower-gui-cp4i.apps.t9xdnubu.eastus.aroapp.io
