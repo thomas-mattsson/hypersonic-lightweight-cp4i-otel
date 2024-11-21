@@ -1,0 +1,12 @@
+kind: Secret
+apiVersion: v1
+metadata:
+  name: keycloak-cert
+  annotations:
+    reflector.v1.k8s.emberstack.com/reflection-allowed: "true"
+    reflector.v1.k8s.emberstack.com/reflection-auto-enabled: "true"
+    reflector.v1.k8s.emberstack.com/reflection-auto-namespaces: "mq" 
+type: Opaque
+stringData:
+  ca.crt: |
+  
