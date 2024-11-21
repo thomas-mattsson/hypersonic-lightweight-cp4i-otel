@@ -67,8 +67,8 @@ spec:
             - ca.crt
       - name: keycloak-trust
         secret:
-          secretName: keycloak-cert
+          secretName: default-cert-copy
           items:
-            - ca.crt      
+            - tls.crt
   web:
     enabled: true
