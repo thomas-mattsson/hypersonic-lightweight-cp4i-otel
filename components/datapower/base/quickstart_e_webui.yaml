@@ -1,0 +1,57 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: quickstart-enable-web-ui
+  namespace: cp4i
+  labels:
+    app.kubernetes.io/component: datapower
+    app.kubernetes.io/instance: cp4i-quickstart
+    app.kubernetes.io/managed-by: datapower-operator
+    app.kubernetes.io/name: datapower
+    app.kubernetes.io/part-of: ibm-datapower-quickstart
+data:
+  default.cfg: |
+    # start datapower-operator default.cfg
+
+    top; configure terminal;
+
+    %if% available "snmp"
+    snmp
+      admin-state enabled
+      version 2c
+      ip-address 0.0.0.0
+      port 1161
+      community public default read-only 0.0.0.0/0
+      trap-default-subscriptions
+      trap-priority warn
+      trap-code 0x00030002
+      trap-code 0x00230003
+      trap-code 0x00330002
+      trap-code 0x00b30014
+      trap-code 0x00e30001
+      trap-code 0x00e40008
+      trap-code 0x00f30008
+      trap-code 0x01530001
+      trap-code 0x01a2000e
+      trap-code 0x01a40001
+      trap-code 0x01a40005
+      trap-code 0x01a40008
+      trap-code 0x01b10006
+      trap-code 0x01b10009
+      trap-code 0x01b20002
+      trap-code 0x01b20004
+      trap-code 0x01b20008
+      trap-code 0x02220001
+      trap-code 0x02220003
+      trap-code 0x02240002
+    exit
+    %endif%
+    web-mgmt
+      admin-state enabled
+    exit
+    rest-mgmt
+      admin-state enabled
+      local-address "0.0.0.0" "5554"
+    exit
+
+    # end datapower-operator default.cfg
