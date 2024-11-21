@@ -15,3 +15,4 @@ resources:
   # - native-ha-qm-wellknowncerts
 
   - native-ha-qm-auth
+  - native-ha-qm-auth-jwt
