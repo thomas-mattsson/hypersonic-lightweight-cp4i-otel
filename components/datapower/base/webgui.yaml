@@ -13,7 +13,7 @@ metadata:
 data:
   web.cfg: |
     web-mgmt 
-        admin-state "enabled"
+        admin-state enabled
         save-config-overwrite
         idle-timeout 600
         ssl-config-type server
