@@ -11,6 +11,8 @@ spec:
   env:
   - name: DATAPOWER_INTERACTIVE
     value: "true"
+  - name: webGuiManagementState
+    value: "true"
 
   replicas: 1
   resources:
