@@ -12,10 +12,11 @@ spec:
   - name: DATAPOWER_INTERACTIVE
     value: "true"
   domains:
-  — dpApp:
+  - name: default
+    dpApp:
       config:
         — web-config
-      name: default
+      
   replicas: 1
   resources:
     limits:
