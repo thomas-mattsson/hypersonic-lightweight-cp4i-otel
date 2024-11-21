@@ -11,11 +11,12 @@ spec:
   env:
   - name: DATAPOWER_INTERACTIVE
     value: "true"
+
   domains:
   - name: "default"
     dpApp:
       config:
-        — "web-config"
+      - "web-config"
 
   replicas: 1
   resources:
