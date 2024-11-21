@@ -1,8 +1,8 @@
 DEFINE QLOCAL('QUEUE1') DEFPSIST(YES) REPLACE 
 
-SET AUTHREC OBJTYPE(QMGR) PRINCIPAL('integration-admin') AUTHADD(CONNECT)
-SET AUTHREC OBJTYPE(QMGR) PRINCIPAL('integration-admin') AUTHADD(INQ)
-set authrec profile('**') principal('integration-admin') objtype(queue) authadd(all)
+SET AUTHREC OBJTYPE(QMGR) PRINCIPAL('sample-user') AUTHADD(CONNECT)
+SET AUTHREC OBJTYPE(QMGR) PRINCIPAL('sample-user') AUTHADD(INQ)
+set authrec profile('**') principal('sample-user') objtype(queue) authadd(all)
 
 DEFINE CHANNEL(HAQMCHL) CHLTYPE(SVRCONN) TRPTYPE(TCP) SSLCAUTH(OPTIONAL) SSLCIPH('ANY_TLS12_OR_HIGHER') REPLACE
 
