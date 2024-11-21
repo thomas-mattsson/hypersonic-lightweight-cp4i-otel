@@ -1,6 +1,7 @@
 See:
 
 * https://github.com/ibm-messaging/mq-exits/blob/master/channel/jmsjwtexit/README.md (Since this example was written JWKS support has been implemented.)
+* https://community.ibm.com/community/user/integration/blogs/vasily-shcherbinin1/2024/06/19/introducing-jwks
 * https://ibm-cloud.slack.com/archives/CACD10YCD/p1731575557512819?thread_ts=1731520229.420199&cid=CACD10YCD
 * https://www.ibm.com/docs/en/ibm-mq/9.4?topic=wat-configuring-queue-manager-accept-authentication-tokens-using-jwks-endpoint
 
