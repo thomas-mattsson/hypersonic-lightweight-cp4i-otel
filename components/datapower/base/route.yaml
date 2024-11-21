@@ -15,13 +15,3 @@ spec:
     termination: passthrough
     insecureEdgeTerminationPolicy: None
   wildcardPolicy: None
-  #alternateBackends: []
-status:
-  ingress:
-    - host: datapower-gui-cp4i.apps.t9xdnubu.eastus.aroapp.io
-      routerName: default
-      conditions:
-        - type: Admitted
-          status: 'True'
-      wildcardPolicy: None
-      routerCanonicalHostname: router-default.apps.t9xdnubu.eastus.aroapp.io
