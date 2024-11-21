@@ -1,7 +1,7 @@
 apiVersion: mq.ibm.com/v1beta1
 kind: QueueManager
 metadata:
-  name: native-ha-qm-auth
+  name: native-ha-qm-auth-jwt
   annotations:
     certmanager.k8s.io/disable-auto-restart: "true"
     configmap.reloader.stakater.com/reload: "native-ha-qm-auth-configmap"
