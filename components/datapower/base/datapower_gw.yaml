@@ -4,6 +4,8 @@ metadata:
   name: quickstart
   namespace: cp4i
 spec:
+  runAsRoot: true
+  
   license:
     accept: true
     license: L-EYGU-PVGRBC
