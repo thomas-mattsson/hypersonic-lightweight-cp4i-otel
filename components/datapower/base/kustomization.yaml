@@ -3,4 +3,6 @@ kind: Kustomization
 
 resources:
   - datapower_gw.yaml
-
+  - dp-webui-service.yaml
+  - route.yaml
+  - webgui.yaml

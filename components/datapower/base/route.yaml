@@ -1,0 +1,17 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: datapower-gui
+  namespace: cp4i
+spec:
+  host: datapower-gui-cp4i.apps.t9xdnubu.eastus.aroapp.io
+  to:
+    kind: Service
+    name: dp-webui
+    weight: 100
+  port:
+    targetPort: 9090
+  tls:
+    termination: passthrough
+    insecureEdgeTerminationPolicy: None
+  wildcardPolicy: None

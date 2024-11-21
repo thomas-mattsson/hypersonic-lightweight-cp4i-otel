@@ -8,6 +8,16 @@ spec:
     accept: true
     license: L-EYGU-PVGRBC
     use: nonproduction
+  env:
+  - name: DATAPOWER_INTERACTIVE
+    value: "true"
+
+  domains:
+  - name: "default"
+    dpApp:
+      config:
+      - webgui
+
   replicas: 1
   resources:
     limits:
