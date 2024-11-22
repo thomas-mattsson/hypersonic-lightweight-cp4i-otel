@@ -3,9 +3,3 @@ kind: Kustomization
 
 resources:
   - subscription.yaml
-  #- datapowermonitors.yaml
-  #- datapowermustgathermanagers.yaml
-  #- datapowermustgathers.yaml
-  #- datapowerrollouts.yaml
-  #- datapowerservicebindings.yaml
-  #- datapowerservices.yaml

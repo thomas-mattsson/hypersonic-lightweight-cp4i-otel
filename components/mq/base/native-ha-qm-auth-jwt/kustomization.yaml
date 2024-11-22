@@ -14,4 +14,3 @@ generatorOptions:
 
 resources:
   - qm.yaml
-  - keycloak-cert.yaml
