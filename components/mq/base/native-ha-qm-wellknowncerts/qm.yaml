@@ -43,10 +43,8 @@ spec:
         deleteClaim: true
     resources:
       limits:
-        cpu: 500m
         memory: 1Gi
       requests:
-        cpu: 100m
         memory: 1Gi
     mqsc:
       - configMap:
