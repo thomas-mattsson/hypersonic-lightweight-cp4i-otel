@@ -36,9 +36,11 @@ spec:
         deleteClaim: true
     resources:
       limits:
-        memory: 2Gi
-      requests:
+        cpu: 1
         memory: 1Gi
+      requests:
+        cpu: 300m
+        memory: 0.5Gi
     mqsc:
       - configMap:
           name: jwtqm-configmap
