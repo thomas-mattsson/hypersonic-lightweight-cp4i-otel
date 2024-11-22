@@ -7,12 +7,12 @@ resources:
   # Resources for QM using a self signed server certificate.
   - native-ha-qm
 
-  #- singleinstance-qm
+  - singleinstance-qm
 
   #- messagingserver
 
   # Resources for QM using certificate from LetsEncrypt
   # - native-ha-qm-wellknowncerts
 
-  - native-ha-qm-auth
+  #- native-ha-qm-auth
   - native-ha-qm-auth-jwt

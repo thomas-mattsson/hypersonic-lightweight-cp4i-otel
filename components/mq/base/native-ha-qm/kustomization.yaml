@@ -3,6 +3,7 @@ kind: Kustomization
 
 # Generate these config maps from mqsc files to support
 # syntax hignlighting in tooling.
+
 configMapGenerator:
   - name: native-ha-qm-configmap
     files:
@@ -14,7 +15,7 @@ generatorOptions:
 
 resources: 
 
-  - qm.yaml
+  #- qm.yaml
   #- sni-route.yaml
 
   - tls/ca-ss-issuer.yaml
