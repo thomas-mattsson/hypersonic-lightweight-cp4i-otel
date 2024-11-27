@@ -1,12 +1,12 @@
 kind: ImageStream
 apiVersion: image.openshift.io/v1
 metadata:
-  name: mq-metrics
+  name: mq-metrics-otel
 ---
 kind: BuildConfig
 apiVersion: build.openshift.io/v1
 metadata:
-  name: mq-metrics-build
+  name: mq-metrics-otel-build
 spec:
   output:
     to:
