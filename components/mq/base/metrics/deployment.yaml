@@ -10,7 +10,6 @@
         app: mq-metric-exporter
     template:
       metadata:
-        creationTimestamp: null
         labels:
           app: mq-metric-exporter
       spec:
