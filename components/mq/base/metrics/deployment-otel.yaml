@@ -14,7 +14,7 @@
           app: mq-metric-exporter-otel
       spec:
         containers:
-        - name: mq-metric-exporter-otel
+        - name: mq-metric-exporter
           image: 'image-registry.openshift-image-registry.svc:5000/cp4i/mq-metrics-otel:latest'
         envFrom:
         - configMapRef:
