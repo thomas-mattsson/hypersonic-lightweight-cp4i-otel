@@ -8,5 +8,5 @@ resources:
   - metrics-configuration.yaml
   - empty-metrics-credentials.yaml
   #- deployment.yaml
-  #- deployment-otel.yaml
+  - deployment-otel.yaml
   - podmonitor.yaml
