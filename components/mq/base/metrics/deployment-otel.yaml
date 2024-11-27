@@ -14,14 +14,14 @@
           app: mq-metric-exporter-otel
       spec:
         containers:
-        - name: mq-metric-exporter
-        image: 'image-registry.openshift-image-registry.svc:5000/cp4i/mq-metrics-otel:latest'
-        envFrom:
-        - configMapRef:
-            name: metrics-configuration-otel
-        - secretRef:
-            name: empty-metrics-credentials
-        ports:
-          - containerPort: 9157
-            name: web
+          - name: mq-metric-exporter
+            image: 'image-registry.openshift-image-registry.svc:5000/cp4i/mq-metrics-otel:latest'
+            envFrom:
+            - configMapRef:
+              name: metrics-configuration-otel
+            - secretRef:
+              name: empty-metrics-credentials
+            ports:
+              - containerPort: 9157
+                name: web
  
