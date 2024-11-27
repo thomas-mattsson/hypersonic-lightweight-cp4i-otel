@@ -6,11 +6,21 @@ metadata:
 data:
   IBMMQ_GLOBAL_USEOBJECTSTATUS: 'true'
   IBMMQ_OBJECTS_SUBSCRIPTIONS: '!$SYS*'
-  IBMMQ_CONNECTION_CHANNEL: SICHL
-  IBMMQ_CONNECTION_CONNNAME: singleinstance-qm-ibm-mq.cp4i.svc(1414)
+  IBMMQ_CONNECTION_CHANNEL: METRICS
+  IBMMQ_CONNECTION_CONNNAME: native-ha-qm-auth-ibm-mq.cp4i.svc(1414)
   IBMMQ_OBJECTS_QUEUES: '*,!SYSTEM.*,!AMQ.*'
   IBMMQ_GLOBAL_LOGLEVEL: INFO
-  IBMMQ_CONNECTION_QUEUEMANAGER: SINGLEINSTANCEQM
+  IBMMQ_CONNECTION_QUEUEMANAGER: NATIVEHAQMAUTH
   IBMMQ_OBJECTS_TOPICS: '!*'
   IBMMQ_GLOBAL_USEPUBLICATIONS: 'false'
   IBMMQ_GLOBAL_CONFIGURATIONFILE: ''
+otel:
+  # Destination endpoint for exporting metrics via GRPC.
+  # Set to empty to use stdout
+  endpoint: otel-collector.openshift-opentelemetry-operator.svc.cluster.local:4317
+  # Use unprotected protocol to GRPC server
+  insecure: true
+  # Logging within the OTEL libraries
+  logLevel: INFO
+  interval: 10s
+  maxErrors: 10
