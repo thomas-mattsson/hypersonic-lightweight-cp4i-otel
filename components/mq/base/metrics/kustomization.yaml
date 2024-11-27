@@ -6,6 +6,7 @@ resources:
   - buildconfig.yaml
   - buildconfig-otel.yaml
   - metrics-configuration.yaml
+  - metrics-configuration-otel.yaml
   - empty-metrics-credentials.yaml
   - deployment.yaml
   - deployment-otel.yaml
