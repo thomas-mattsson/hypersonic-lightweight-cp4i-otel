@@ -3,8 +3,8 @@ kind: Kustomization
 
 resources:
  
-  - buildconfig.yaml
-  #- buildconfig-otel.yaml
+  #- buildconfig.yaml
+  - buildconfig-otel.yaml
   - metrics-configuration.yaml
   - empty-metrics-credentials.yaml
   #- deployment.yaml
