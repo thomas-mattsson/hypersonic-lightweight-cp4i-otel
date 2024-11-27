@@ -1,0 +1,27 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: metrics-configuration-otel
+  namespace: cp4i
+data:
+  IBMMQ_GLOBAL_USEOBJECTSTATUS: 'true'
+  IBMMQ_OBJECTS_SUBSCRIPTIONS: '!$SYS*'
+  IBMMQ_CONNECTION_CHANNEL: METRICS
+  IBMMQ_CONNECTION_CONNNAME: singleinstance-qm-ibm-mq.cp4i.svc(1414)
+  IBMMQ_OBJECTS_QUEUES: '*,!SYSTEM.*,!AMQ.*'
+  IBMMQ_GLOBAL_LOGLEVEL: INFO
+  IBMMQ_CONNECTION_QUEUEMANAGER: SINGLEINSTANCEQM
+  IBMMQ_OBJECTS_TOPICS: '!*'
+  IBMMQ_GLOBAL_USEPUBLICATIONS: 'false'
+  IBMMQ_GLOBAL_CONFIGURATIONFILE: ''
+
+otel:
+  # Destination endpoint for exporting metrics via GRPC.
+  # Set to empty to use stdout
+  endpoint: otel-collector.openshift-opentelemetry-operator.svc:4317
+  # Use unprotected protocol to GRPC server
+  insecure: true
+  # Logging within the OTEL libraries
+  logLevel: INFO
+  interval: 10s
+  maxErrors: 10
