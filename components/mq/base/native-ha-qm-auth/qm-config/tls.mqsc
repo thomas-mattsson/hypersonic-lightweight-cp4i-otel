@@ -9,7 +9,7 @@ DEFINE CHANNEL(METRICS) CHLTYPE(SVRCONN) TRPTYPE(TCP) SSLCAUTH(OPTIONAL) REPLACE
 SET CHLAUTH(METRICS) TYPE(BLOCKUSER) USERLIST('nobody') ACTION(ADD)
 
 set chlauth(HAQMCHL) type(sslpeermap) sslpeer('CN=mqclient1') usersrc(map) mcauser('mqclient1') action(add) 
-set authrec principal('mqclient1') objtype(qmgr) authadd(all)
+set authrec principal('mqclient1') objtype(channel) authadd('HAQMCHL')
 set authrec profile('**') principal('mqclient1') objtype(queue) authadd(all)
 
 refresh security
