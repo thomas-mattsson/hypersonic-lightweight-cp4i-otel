@@ -34,8 +34,8 @@ data:
   IBMMQ_OBJECTS_TOPICS: '!*'
   IBMMQ_GLOBAL_USEPUBLICATIONS: 'false'
   IBMMQ_GLOBAL_CONFIGURATIONFILE: ''
-  OTEL_EXPORTER_OTLP_ENDPOINT: 'otel-collector.openshift-opentelemetry-operator.svc:4317'
-  OTEL_EXPORTER_OTLP_INSECURE: 'true'
+  #OTEL_EXPORTER_OTLP_ENDPOINT: 'otel-collector.openshift-opentelemetry-operator.svc:4317'
+  #OTEL_EXPORTER_OTLP_INSECURE: 'true'
 
 otel:
   # Destination endpoint for exporting metrics via GRPC.
@@ -44,6 +44,6 @@ otel:
   # Use unprotected protocol to GRPC server
   insecure: true
   # Logging within the OTEL libraries
-  logLevel: INFO
+  logLevel: DEBUG
   interval: 10s
   maxErrors: 10
