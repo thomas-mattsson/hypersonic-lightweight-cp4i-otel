@@ -11,3 +11,4 @@ resources:
   - deployment.yaml
   - deployment-otel.yaml
   - podmonitor.yaml
+  - mq-otel.yaml
