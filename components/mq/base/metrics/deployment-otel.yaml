@@ -33,4 +33,4 @@
             name: otel-config-file
             items:
               - key: file
-              - path: mq_otel.yaml
+                path: mq_otel.yaml
