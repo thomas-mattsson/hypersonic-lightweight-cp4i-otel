@@ -24,4 +24,12 @@
             ports:
             - containerPort: 9157
               name: web
- 
+        volumeMounts:
+          - name: config-vol
+            mountPath: /opt/config/mq_otel.yaml
+        volumes:
+        - name: config-vol
+          configMap:
+            name: otel-config-file
+            items:
+              - key: file
