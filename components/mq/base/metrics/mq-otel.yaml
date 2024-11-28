@@ -105,7 +105,7 @@ data:
     otel:
       # Destination endpoint for exporting metrics via GRPC.
       # Set to empty to use stdout
-      endpoint: otel-collector-headless.openshift-opentelemetry-operator.svc.cluster.local:4317
+      endpoint: http://otel-collector-headless.openshift-opentelemetry-operator.svc.cluster.local:4318
       # Use unprotected protocol to GRPC server
       insecure: true
       # Logging within the OTEL libraries
