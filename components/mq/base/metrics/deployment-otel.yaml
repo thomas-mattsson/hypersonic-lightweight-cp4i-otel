@@ -24,9 +24,9 @@
             ports:
             - containerPort: 9157
               name: web
-        volumeMounts:
-          - name: config-vol
-            mountPath: /opt/config
+            volumeMounts:
+              - name: config-vol
+                mountPath: /opt/config
         volumes:
         - name: config-vol
           configMap:
