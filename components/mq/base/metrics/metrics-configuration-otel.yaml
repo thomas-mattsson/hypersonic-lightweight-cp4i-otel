@@ -6,7 +6,8 @@ metadata:
 service:
   pipelines:
     metrics:
-      receivers: [otlp]
+      receivers: 
+        - otlp
 
 receivers:
   otlp:
@@ -26,8 +27,6 @@ data:
   IBMMQ_OBJECTS_TOPICS: '!*'
   IBMMQ_GLOBAL_USEPUBLICATIONS: 'false'
   IBMMQ_GLOBAL_CONFIGURATIONFILE: ''
-  #OTEL_EXPORTER_OTLP_ENDPOINT: 'otel-collector.openshift-opentelemetry-operator.svc:4317'
-  #OTEL_EXPORTER_OTLP_INSECURE: 'true'
 
 otel:
   # Destination endpoint for exporting metrics via GRPC.
