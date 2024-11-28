@@ -3,6 +3,20 @@ apiVersion: v1
 metadata:
   name: metrics-configuration-otel
   namespace: cp4i
+service:
+  pipelines:
+    metrics:
+      receivers: [otlp]
+
+exporters:
+   prometheus:
+    endpoint: ':9159'
+    send_timestamps: true
+    resource_to_telemetry_conversion:
+      enabled: false
+    add_metric_suffixes: false
+
+
 data:
   IBMMQ_GLOBAL_USEOBJECTSTATUS: 'true'
   IBMMQ_OBJECTS_SUBSCRIPTIONS: '!$SYS*'
