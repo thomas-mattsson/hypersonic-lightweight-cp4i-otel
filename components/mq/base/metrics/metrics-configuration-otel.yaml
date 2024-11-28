@@ -3,17 +3,6 @@ apiVersion: v1
 metadata:
   name: metrics-configuration-otel
   namespace: cp4i
-service:
-  pipelines:
-    metrics:
-      receivers: 
-        - otlp
-
-receivers:
-  otlp:
-    protocols:
-      grpc:
-        endpoint: 'otel-collector-headless.openshift-opentelemetry-operator.svc.cluster.local:4317'
 
 
 data:
