@@ -13,7 +13,7 @@ receivers:
   otlp:
     protocols:
       grpc:
-        endpoint: otel-collector-headless.openshift-opentelemetry-operator.svc.cluster.local:4317
+        endpoint: 'otel-collector-headless.openshift-opentelemetry-operator.svc.cluster.local:4317'
 
 
 data:
