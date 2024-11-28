@@ -26,10 +26,11 @@
               name: web
         volumeMounts:
           - name: config-vol
-            mountPath: /opt/config/mq_otel.yaml
+            mountPath: /opt/config
         volumes:
         - name: config-vol
           configMap:
             name: otel-config-file
             items:
               - key: file
+              - path: mq_otel.yaml
