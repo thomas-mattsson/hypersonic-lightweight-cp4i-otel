@@ -16,6 +16,12 @@ exporters:
       enabled: false
     add_metric_suffixes: false
 
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: otel-collector.openshift-opentelemetry-operator.svc:4317
+
 
 data:
   IBMMQ_GLOBAL_USEOBJECTSTATUS: 'true'
