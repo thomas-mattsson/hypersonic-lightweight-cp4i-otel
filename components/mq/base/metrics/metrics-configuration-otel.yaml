@@ -8,14 +8,6 @@ service:
     metrics:
       receivers: [otlp]
 
-exporters:
-   prometheus:
-    endpoint: ':9159'
-    send_timestamps: true
-    resource_to_telemetry_conversion:
-      enabled: false
-    add_metric_suffixes: false
-
 receivers:
   otlp:
     protocols:
@@ -40,7 +32,7 @@ data:
 otel:
   # Destination endpoint for exporting metrics via GRPC.
   # Set to empty to use stdout
-  endpoint: otel-collector.openshift-opentelemetry-operator.svc:4317
+  endpoint: otel-collector-headless.openshift-opentelemetry-operator.svc.cluster.local:4317
   # Use unprotected protocol to GRPC server
   insecure: true
   # Logging within the OTEL libraries
