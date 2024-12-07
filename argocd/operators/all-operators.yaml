@@ -38,8 +38,8 @@ spec:
           namespace: cp4i
       #  - name: assetrepository
       #    namespace: cp4i
-         - name: openshift-telemetry
-           namespace: openshift-tempo-operator
+        - name: openshift-telemetry
+          namespace: openshift-tempo-operator
   template:
     metadata:
       name: '{{name}}-operator'
