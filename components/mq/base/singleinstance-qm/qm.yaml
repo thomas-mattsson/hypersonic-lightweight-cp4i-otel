@@ -7,6 +7,10 @@ metadata:
     configmap.reloader.stakater.com/reload: "singleinstance-qm-configmap"
     secret.reloader.stakater.com/reload: "mq-external-tls-secret"
 spec:
+  template:
+    pod:
+      containers:
+        - image: default-route-openshift-image-registry.itzroks-50f1njf3h5-7hmmnn-1615bdf0ff9ba5518cb8d7760c84e878-0000.eu-de.containers.appdomain.cloud/cp4i/mq-otel
  # telemetry:
  #   tracing:
  #     instana:
