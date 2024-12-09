@@ -23,6 +23,7 @@ spec:
               value: "yes"
           name: qmgr
           image: image-registry.openshift-image-registry.svc:5000/cp4i/mq-otel
+          imagePullPolicy: Always
   queueManager:
     mqsc:
       - configMap:
