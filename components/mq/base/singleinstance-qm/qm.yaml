@@ -22,7 +22,7 @@ spec:
             - name: MQSNOAUT
               value: "yes"
           name: qmgr
-          image: default-route-openshift-image-registry.itzroks-50f1njf3h5-7hmmnn-1615bdf0ff9ba5518cb8d7760c84e878-0000.eu-de.containers.appdomain.cloud/cp4i/mq-otel
+          image: image-registry.openshift-image-registry.svc:5000/cp4i/mq-otel
   queueManager:
     mqsc:
       - configMap:
