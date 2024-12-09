@@ -5,5 +5,5 @@ kind: Kustomization
 #- ../../../../components/openshift-telemetry/variants/cloudprovider/odf
 
 resources:
-#- ../../../../components/openshift-telemetry/base
+- ../../../../components/openshift-telemetry/base
 - ../../../../components/openshift-telemetry/base/odf
