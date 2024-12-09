@@ -33,6 +33,7 @@ rules:
       - apiextensions.k8s.io
       - datapower.ibm.com
       - objectbucket.io
+      - tempo.grafana.com
       - ""
     resources:
       - '*'
