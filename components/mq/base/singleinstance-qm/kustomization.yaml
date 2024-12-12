@@ -8,6 +8,7 @@ configMapGenerator:
     files:
       - qm-config/tls.mqsc
       - qm-config/mq.ini
+      - qm-config/mq-exit.ini
 
 generatorOptions:
   disableNameSuffixHash: true
