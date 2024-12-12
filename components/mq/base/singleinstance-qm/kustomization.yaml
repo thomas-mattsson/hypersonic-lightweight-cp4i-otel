@@ -16,4 +16,4 @@ resources:
   # Resources for QM using a self signed cerver certificate.
 
   - qm.yaml
- #- qm2.yaml
+  - qm2.yaml
