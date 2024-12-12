@@ -47,6 +47,7 @@ spec:
           name: singleinstance-qm-configmap
           items:
             - mq.ini
+            - mq-exit.ini
     availability:
       type: SingleInstance
     name: SINGLEINSTANCEQM2
