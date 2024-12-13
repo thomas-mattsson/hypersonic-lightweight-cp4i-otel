@@ -61,7 +61,7 @@ spec:
       defaultClass: PATCHED_BY_KUSTOMIZE
       queueManager:
         type: persistent-claim
-  version: 9.4.0.5-r2
+  version: 9.4.1.0-r2
   pki:
     keys:
       - name: default
