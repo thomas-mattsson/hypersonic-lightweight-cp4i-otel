@@ -32,7 +32,7 @@ spec:
             - name: OTLP_EXPORTER_GRPC_ENDPOINT
               value: tempo-tempostack-distributor.openshift-tempo-operator.svc.cluster.local:4317
             - name: OTLP_EXPORTER_HTTP_URL
-              value: tempo-tempostack-distributor.openshift-tempo-operator.svc.cluster.local:4318/v1/traces
+              value: tempo-tempostack-distributor.openshift-tempo-operator.svc.cluster.local:4318:/v1/traces
           name: qmgr
           image: image-registry.openshift-image-registry.svc:5000/cp4i/mq-otel
           imagePullPolicy: Always
