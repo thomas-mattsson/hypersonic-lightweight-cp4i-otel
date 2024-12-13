@@ -24,15 +24,17 @@ spec:
             #- name: APIX_LOGFILE
             #  value: stdout
             - name: LOG_LEVEL
-              value: info
+              value: debug
             - name: MONITOR_LEVEL
               value: debug
             - name: SPAN_FORMAT
               value: otel
+            - name: IBMMQ_DEST_MONITOR_LEVEL_DEBUG
+              value: '.*'
             #- name: OTLP_EXPORTER_GRPC_ENDPOINT
             #  value: tempo-tempostack-distributor.openshift-tempo-operator.svc.cluster.local:4317
             - name: OTLP_EXPORTER_HTTP_URL
-              value: tempo-tempostack-distributor.openshift-tempo-operator.svc.cluster.local:4318
+              value: tempo-tempostack-distributor.openshift-tempo-operator.svc.cluster.local:4318/v1/traces
           name: qmgr
           # image: image-registry.openshift-image-registry.svc:5000/cp4i/mq-otel
           # imagePullPolicy: Always
